@@ -4,3 +4,12 @@
 .highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:35px;border-top:1px solid var(--line);padding-top:55px;padding-bottom:55px}.highlights article{border-right:1px solid var(--line);padding-right:20px}.highlights article:last-of-type{border:0}.highlights strong{font-size:56px;letter-spacing:-2px;color:var(--gold);font-weight:500}.highlights h3{font-size:17px}.highlights p{font-size:12px}.highlight-note{grid-column:1/-1;color:#8b998e;font-size:10px!important;margin:0}.highlight-note a{text-decoration:underline}@media(max-width:700px){.highlights{grid-template-columns:1fr;gap:25px}.highlights article{border-right:0;border-bottom:1px solid var(--line);padding-bottom:25px}.highlights strong{font-size:48px}}
 
 .contact-options{max-width:600px;margin:30px auto 0;padding:25px;border:1px solid var(--line);border-radius:12px;background:#1b281f}.contact-options[hidden]{display:none}.contact-options .button{margin:8px;gap:12px}.mail-secondary{background:transparent;color:var(--cream);border:1px solid #ffffff40}.contact-email a{color:var(--gold);text-decoration:underline;text-underline-offset:5px}.contact-options h3{margin-top:0}#contact-status{color:var(--gold)}
+
+/* Keep the language selector accessible at every breakpoint. */
+.language-switch{font-size:11px;letter-spacing:.04em;border-left:1px solid var(--line);padding-left:18px;white-space:nowrap}
+html[lang="en"] body{word-break:normal;overflow-wrap:break-word}
+html[lang="en"] .hero h1{font-size:clamp(40px,4.1vw,68px);letter-spacing:-2.5px}
+html[lang="en"] h2{letter-spacing:-1.5px}
+@media(max-width:900px){nav>a.language-switch{display:inline-block}}
+@media(max-width:600px){nav{gap:12px}.language-switch{padding-left:10px}html[lang="en"] header .brand{font-size:12px}html[lang="en"] .hero h1{font-size:42px;letter-spacing:-1.8px}html[lang="en"] .actions{flex-wrap:wrap}html[lang="en"] .hero-note{line-height:1.9}}
+.nav-cta{white-space:nowrap}
